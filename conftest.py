@@ -1,6 +1,6 @@
 import pytest
-from practikum.burger import Burger
-from practikum.database import Database
+from praktikum.burger import Burger
+from praktikum.database import Database
 
 
 @pytest.fixture
@@ -13,7 +13,3 @@ def burger():
 def database():
     database = Database()
     return database
-
-
-
-

@@ -1,5 +1,5 @@
 from helpers import GenerateTestData
-from practikum.bun import Bun
+from praktikum.bun import Bun
 
 
 class TestBun:
@@ -12,7 +12,7 @@ class TestBun:
 
         assert bun.get_name() == name and bun.get_price() == price
 
-    #Проверка метода получения имени булки
+    # Проверка метода получения имени булки
     def test_get_name_expected_value(self):
         test_data = GenerateTestData()
         name = test_data.random_bun_name()

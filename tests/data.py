@@ -1,4 +1,4 @@
-from practikum.ingredient_types import *
+from praktikum.ingredient_types import *
 
 
 class Data:
@@ -12,6 +12,6 @@ class Data:
     ingredients_name_sauces = ['Майонез', 'Песто', 'Цезарь', 'Кисло-сладкий',
                                'Сырный', 'Чесночный', 'Легкий', 'Сметанный']
 
-    ingredients_number = [1, 2, 3, 4, 5]
+    ingredients_num = [1, 2, 3, 4, 5]
 
     ingredient_type = [INGREDIENT_TYPE_SAUCE, INGREDIENT_TYPE_FILLING]

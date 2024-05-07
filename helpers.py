@@ -1,6 +1,6 @@
 import random
 
-from practikum.ingredient_types import *
+from praktikum.ingredient_types import *
 from tests.data import Data
 
 
@@ -18,14 +18,14 @@ class GenerateTestData:
         bun_price = random.randint(-100, -1)
         return bun_price
 
-    def generate_ingredient_data_sause(self):
+    def generate_sause(self):
         data = Data()
         ingredient_name = random.choice(data.ingredients_name_sauces)
         ingredient_price = random.randint(100, 9999)
         ingredient_data = [INGREDIENT_TYPE_SAUCE, ingredient_name, ingredient_price]
         return ingredient_data
 
-    def generate_ingredient_data_filling(self):
+    def generate_filling(self):
         data = Data()
         ingredient_name = random.choice(data.ingredients_name_fillings)
         ingredient_price = random.randint(100, 9999)
@@ -33,8 +33,8 @@ class GenerateTestData:
         return ingredient_data
 
     def random_ingredient(self):
-        ingredient_sauce = self.generate_ingredient_data_sause()
-        ingredient_filling = self.generate_ingredient_data_filling()
+        ingredient_sauce = self.generate_sause()
+        ingredient_filling = self.generate_filling()
 
         random_ingredient = random.choice([ingredient_sauce, ingredient_filling])
         return random_ingredient

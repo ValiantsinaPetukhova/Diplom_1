@@ -1,6 +1,6 @@
 from unittest.mock import Mock
 
-from practikum.ingredient_types import *
+from praktikum.ingredient_types import *
 
 
 class DatabaseMocks:
